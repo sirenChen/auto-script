@@ -15,7 +15,7 @@
 百度搜索tampermonkey或者油猴插件。安装插件。   
 安装完成之后可以看到插件栏中多了一个插件。   
 点击插件，点击Create new script。如下图：  
-最后把我编写的demo脚本粘贴进去。   
+最后把我编写的demo脚本(https://github.com/sirenChen/auto-script/blob/master/auto-script.js)粘贴进去。   
 ![image.png](https://github.com/sirenChen/auto-script/blob/master/plugin.png)
 
 
