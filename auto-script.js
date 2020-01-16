@@ -22,7 +22,9 @@
 
 
 
-  // 方法定义
+  /**
+   * 主要逻辑，自动填写表单
+   */
   async function autoFillForm() {
 
     // 获取网页上的各种所需要的元素
@@ -54,6 +56,9 @@
     askToConfirm();
   }
 
+  /**
+   * 新建一个控制面板，方便用户操作
+   */
   function createCtrlPanel() {
     let ctrlPanel = document.createElement('div');
     ctrlPanel.id = 'my-ctrl-panel';
@@ -74,6 +79,9 @@
     document.body.append(ctrlPanel);
   }
 
+  /**
+   * 打开上传文件，如果需要的话，我们可以读取文件中的数据。
+   */
   async function uploadFile() {
     return new Promise(function (resolve, error) {
       let fileUpload = window.frames['uploadFrame4'].contentDocument.querySelector('#fileUpload');
@@ -86,6 +94,9 @@
     });
   }
 
+  /**
+   * 最后在一次向用户确认一切无误。
+   */
   function askToConfirm() {
     let submitBtn = document.querySelector('#submit_button');
     submitBtn.style.border = '5px solid red';
@@ -97,6 +108,9 @@
     submitBtn.parentElement.append(confirmText);
   }
 
+  /**
+   * 输入日志到控制面板
+   */
   function log(msg) {
     let msgElement = document.querySelector('#my-msg');
 
